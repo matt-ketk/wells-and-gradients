@@ -1,0 +1,6 @@
+links:
+
+perlin noise in numpy
+stackoverflow.com/questions/42147776/producing-2d-perlin-noise-with-numpy
+
+partial derivatives, gradient descent math involved
