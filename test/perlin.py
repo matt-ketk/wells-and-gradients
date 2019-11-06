@@ -44,3 +44,4 @@ lin = np.linspace(0,5,100,endpoint=False)
 x,y = np.meshgrid(lin,lin) # FIX3: I thought I had to invert x and y here but it was a mistake
 
 plt.imshow(perlin(x,y,seed=2),origin='upper')
+plt.show()
