@@ -59,7 +59,7 @@ def move(n, well):
         well.pos = moveset[n]
 
 def withinLimits(x,y):
-    return (x in RANGE_X) and (x in RANGE_Y)
+    return (x in RANGE_X) and (y in RANGE_Y)
 
 def setLimits(sizex, sizey):
     RANGE_X = range(sizex)
