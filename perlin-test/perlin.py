@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-def perlin(x,y,seed=0):
+def perlin(x,y,seed=1):
     # permutation table
     np.random.seed(seed)
     p = np.arange(256,dtype=int)
@@ -43,5 +43,9 @@ def gradient(h,x,y):
 lin = np.linspace(0,5,100,endpoint=False)
 x,y = np.meshgrid(lin,lin) # FIX3: I thought I had to invert x and y here but it was a mistake
 
-plt.imshow(perlin(x,y,seed=2),origin='upper')
+print(perlin(x,y,seed=1))
+
+"""
+plt.imshow(perlin(x,y,seed=1),origin='upper')
 plt.show()
+"""
