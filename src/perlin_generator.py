@@ -51,7 +51,19 @@ def create2DPerlinMap(sizeX, sizeY, density_constant=100): # LATER: understand h
     x,y = np.meshgrid(xlin,ylin)
     return perlin(x,y,seed=int(time.time()))
 
+def floorifyMap(p_map):
+    for x in range(p_map.shape[0]):
+        for y in range(p_map.shape[1]):
+            if p_map[x][y] < 0.0:
+                p_map[x][y] = 0.0
+                    
+
 """
+test_map = create2DPerlinMap(10,10)
+floorifyMap(test_map)
+for x in np.nditer(50 * test_map):
+    print(int(x))
+
 plt.imshow(perlin(x,y,seed=1),origin='upper')
 plt.show()
 """

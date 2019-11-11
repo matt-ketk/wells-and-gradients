@@ -14,7 +14,7 @@ class Well:
         for x in range(people_distro.shape[0]):
             for y in range(people_distro.shape[1]):
                 if self.inRange(x,y):
-                    popul += int(people_distro[x][y])
+                    popul += int(100 * people_distro[x][y])
 
         return popul
 
