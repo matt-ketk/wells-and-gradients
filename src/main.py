@@ -26,6 +26,7 @@ def greedy_method1(iterations, sizex=100, sizey=100):
         # popul_trend[i] = well.getPop(people_distro)
         print(well.getPop(people_distro))
     # return popul_trend
-        
+
+
 if __name__ == "__main__":
     main()
